@@ -29,16 +29,16 @@ app.get('/team', function(req, res) {
 app.get('/blog', function(req, res) {
   res.render('blog',{contactContent, contactContent});
 });
-app.get('/compose', function(req, res) {
+app.get('/blog/compose', function(req, res) {
   res.render('compose');
 });
-app.post("/compose",function(req,res){
+app.post("/blog/compose",function(req,res){
   
   const post={ 
           title: req.body.postTitle
             ,content: req.body.post};
             posts.push(post);
-     res.redirect("/");
+     res.redirect("/blog");
 });
      
 
