@@ -1,55 +1,31 @@
 <%- include('partials/header'); -%>
 <section class="hero" style="padding:20px";>
 <link rel="stylesheet" href="css/blog.css">
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
 <br><Br><br>
 <br>
-
-
-
 <section class="blog_row">
-
 <h1 class ="title">Blogs
+</h1><div class="row">
+ <%  posts.forEach(function(post){ %>
 
-</h1>
-<div class="row">
-<div class="column">
-<div class="blog-card">
-	<img class="blog-img" src="images/radio_astronomy.jpg" >
-	<div class="text-overlay">
-		<h2>lorem ipsum</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales pos
-	uere felis non efficitur. Mauris mollis elit urna, id tempus... &nbsp;&nbsp;<a h
-	ref="#" class="read-more">Read More</a></p>
-	</div>
-</div>
-</div>
-<div class="column">
-<div class="blog-card">
-	<img class="blog-img" src="images/radio_astronomy.jpg" >
-	<div class="text-overlay">
-		<h2>lorem ipsum</h2>
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sod
-	ales posuere felis non efficitur. Mauris mollis elit urna, id tempus... &nbsp;&nbsp;<a 
-	href="#" class="read-more">Read More</a></p>
-	</div>
-</div>
-</div>
-<div class="column">
-<div class="blog-card">
-	<img class="blog-img" src="images/radio_astronomy.jpg" >
-	<div class="text-overlay">
-		<h2>lorem ipsum</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellu
-	s sodales posuere felis non efficitur. Mauris mollis elit urna, id
-		tempus... &nbsp;&nbsp;<a href="#" class="read-more">Read More</a></p>
-	</div>
-</div>
-</div>
-</div>
-</section></section>
+   <div class="column">
+      <div class="blog-card">
+	     <img class="blog-img" src="images/radio_astronomy.jpg" >
+	         <div class="text-overlay">
+		        <h2><%=post.title%></h2>
+		        <p> <%=post.content.substring(0, 100) + " ..."%>
+                <a href="/blog/posts/<%=post.title%>" class="read-more">Read More</a></p>
+	         </div>
+      </div>
+   </div>
+   <% }) %>
+ </div>
 
 
+</section>
 
 
+</section>
 
 <%- include('partials/footer'); -%>

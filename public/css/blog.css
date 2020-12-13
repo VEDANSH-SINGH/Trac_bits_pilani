@@ -36,6 +36,7 @@
 
 }
  .blog-card {
+	 padding-top:30px;
 	 display: block;
 	 position: relative;
 	 top: 7vw;
