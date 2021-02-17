@@ -2,14 +2,15 @@ const canvas = document.getElementById('canvas1');
 const ctx = canvas.getContext('2d');
 canvas.width=window.innerWidth;
 canvas.height=window.innerHeight;
+vw=canvas.width;
+vh=canvas.height;
 let particleArray=[];
 let particleArray2=[];
 let particleArray3=[]
-
-let adjustX=54;
-let adjustY=-5;
-let adjustX2=136;
-let adjustY2=110;
+let adjustX=0.0425*vw;
+let adjustY=-0.0085*vh;
+let adjustX2=0.108*vw;
+let adjustY2=0.19*vh;
 
 //handle mouse
 const mouse={
@@ -17,7 +18,7 @@ const mouse={
     y:null,
     radius:100
 }
-window.addEventListener('mousemove',function(event){
+canvas.addEventListener('mousemove',function(event){
     mouse.x=event.x;
     mouse.y=event.y;
    // console.log(mouse.x,mouse.y);
@@ -193,11 +194,12 @@ function animate(){
         
 
     }
+    connect
     
     requestAnimationFrame(animate);
 }
 animate();
-/*function connect(){
+function connect(){
     let opacityValue=1;
     for(let a=0;a<particleArray.length;a++){
          for(let b=a;b<particleArray.length;b++){
@@ -218,7 +220,7 @@ animate();
 
     }
 }
-}*/
+}
 const canvas2 = document.getElementById('canvas2');
 const ctx2 = canvas2.getContext('2d');
 canvas2.width=window.innerWidth;
@@ -226,7 +228,7 @@ canvas2.height=window.innerHeight;
 function init(){
     particleArray2=[];
     
-    for(let i=0;i<600;i++){
+    for(let i=0;i<700;i++){
             let x=Math.random()*canvas2.width;
         let y=Math.random()*canvas2.height;
 

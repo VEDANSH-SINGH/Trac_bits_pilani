@@ -16,24 +16,18 @@ header a {
 }
 
 
-.navbar{
-  position:sticky;
-}
+
 .nav-link {
   color: red;
-  font-weight: 20;
-  font-family: "Rajdhani", sans-serif;
+  
+  
+  font-family: "Rajdhani";
   text-transform: uppercase;
 }
 
 #animation{
      position:relative;
-     
-  		
-			
-		
-			
-    top:0;
+     top:0;
     left:0;
     height: 100vh;
     width:100vw;
@@ -43,7 +37,6 @@ header a {
     position:absolute;
     top:0;
     left:0;
-    
     z-index:4;
 
 }
@@ -56,7 +49,7 @@ header a {
     left:0;
     z-index:0;
     background: radial-gradient(circle, rgba(0,0,0,0) 88%, rgba(0,0,0,0.45) 100%),
-						linear-gradient(180deg, rgb(0, 0, 0) 20%, rgb(69, 3, 94) 100%);
+						linear-gradient(180deg, rgb(0, 0, 0) 40%, rgb(98, 12, 129) 100%);
  
 }
 
@@ -65,31 +58,14 @@ body{
   overflow-x: hidden;
   
 }
-
-
-
-
-
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.navbar.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
 .navbar-brand img {
   width: 135px;
   height: 14vh;
 }
-
 .navbar-collapse .search-form input[type="text"] {
   border: 1px solid #ced4da;
   color: #333;
@@ -101,29 +77,21 @@ body{
   border-radius: 0;
   margin-left: -1px;
 }
-
 .navbar-collapse .nav-link {
-  font-size: 1.125rem;
+  font-size: 1.225rem;
   transition: all 0.2s ease-in-out;
+  text-transform: uppercase;
 }
-
 .navbar-collapse .nav-link:hover {
   color: green;
 }
-
-
 .search-icon {
   color: #fff;
   font-size: 1.5rem;
 }
-
-
 .search-icon:hover {
   color: #ee1515;
 }
-
-
-
 form input.btn-primary:hover,
 form button.btn-primary:hover {
   background-color: #fff;
@@ -143,7 +111,6 @@ form button.btn-primary:hover {
   top:100%
   
 }
-
 .hero .container {
   position: relative;
   z-index: 1;
@@ -153,11 +120,9 @@ form button.btn-primary:hover {
   min-height: 600px;
   color: #fff;
 }
-
 .hero .slide-content span {
   color: #ee1515;
 }
-
 .hero .slide-content h1 {
   color: #fff;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.56);
@@ -166,7 +131,6 @@ form button.btn-primary:hover {
           transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
   font-weight: bold;
 }
-
 .hero .slide-content p {
   color: #170936;
   -webkit-transform: matrix(0.93128, 0, 0, 0.93128, 0, 0);
@@ -177,15 +141,12 @@ form button.btn-primary:hover {
   border-bottom-left-radius: 10px;
   margin-bottom: 0;
 }
-
 .hero .slide-content .btn {
   margin-top: 50px;
 }
-
 .hero .slide-content .btn:last-child {
   margin-left: 30px;
 }
-
 .hero .arr-left,
 .hero .arr-right {
   font-size: 3rem;
@@ -198,28 +159,24 @@ form button.btn-primary:hover {
           transform: translateY(-50%);
   z-index: 9;
 }
-
 .hero .arr-left:hover,
 .hero .arr-right:hover {
   cursor: pointer;
 }
-
 .hero .arr-right {
   right: 15px;
 }
-
 .hero .diag-bg {
   width: 100%;
   height: 100%;
   -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
           clip-path: polygon(0 0, 100% 100%, 100% 0);
-  background-color:  rgb(64, 1, 87) ;
+background-color:  rgb(90, 10, 119) ;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
 }
-
 .hero .texture {
   width: 100%;
   height: 100%;
@@ -231,7 +188,6 @@ form button.btn-primary:hover {
   left: 0;
   z-index: -1;
 }
-
 .hero::after {
   content: "";
   width: 100%;
@@ -283,7 +239,6 @@ p {
 color:white;
   line-height: 28px;
 }
-
  .animate-border {
 position: relative;
 display: block;
@@ -308,16 +263,16 @@ animation: animborder 2s linear infinite; }
   -webkit-transform: translateX(0px);
   transform: translateX(0px); }
 100% {
-  -webkit-transform: translateX(113px);
-  transform: translateX(113px); } }
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px); } }
 
 @keyframes animborder {
 0% {
   -webkit-transform: translateX(0px);
   transform: translateX(0px); }
 100% {
-  -webkit-transform: translateX(113px);
-  transform: translateX(113px); } }
+  -webkit-transform: translateX(70px);
+  transform: translateX(70px); } }
 
 .animate-border.border-white:after {
 border-color: #fff; }
@@ -473,36 +428,7 @@ transition: all 0.3s; }
 .footer-widget a:hover {
   color: red; }
 
-.footer-widget:after {
-content: "";
-display: block;
-clear: both; }
 
-.dk-footer-form {
-position: relative; }
-.dk-footer-form input[type=email] {
-  padding: 14px 28px;
-  border-radius: 50px;
-  background: #2E2E2E;
-  border: 1px solid #2E2E2E; }
-.dk-footer-form input::-webkit-input-placeholder, .dk-footer-form input::-moz-placeholder, .dk-footer-form input:-ms-input-placeholder, .dk-footer-form input::-ms-input-placeholder, .dk-footer-form input::-webkit-input-placeholder {
-  color: #878787;
-  font-size: 14px; }
-.dk-footer-form input::-webkit-input-placeholder, .dk-footer-form input::-moz-placeholder, .dk-footer-form input:-ms-input-placeholder, .dk-footer-form input::-ms-input-placeholder, .dk-footer-form input::placeholder {
-  color: #878787;
-  font-size: 14px; }
-.dk-footer-form button[type=submit] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 12px 24px 12px 17px;
-  border-top-right-radius: 25px;
-  border-bottom-right-radius: 25px;
-  border: 1px solid #007bff;
-  background: #007bff;
-  color: #fff; }
-.dk-footer-form button:hover {
-  cursor: pointer; }
 
 
 

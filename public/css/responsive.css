@@ -29,7 +29,7 @@
     width: 100px;
   }
   .navbar-expand-md .navbar-nav .nav-link {
-    padding: 8px 10px;
+    padding: 12px 12px;
   }
   .navbar-expand-md .navbar-nav .nav-item {
     margin-right: 12px;
@@ -142,10 +142,10 @@
 ------------------------------------*/
 @media (min-width: 992px) {
   .navbar-expand-md .navbar-nav .nav-link {
-    padding: 8px 13px;
+    padding: 10px 19px;
   }
   .navbar-expand-md .navbar-nav .nav-item {
-    margin-right: 22px;
+    margin-right: 10px;
   }
   .hero .slide-content {
     min-height: 100vh;

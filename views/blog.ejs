@@ -2,39 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- Document title -->
-    <title>TRAC</title>
-    <link rel="icon" href="images/logo.png" type="image/icon type">
-    <!-- Stylesheets & Fonts -->
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRajdhani:400,600,700"
-        rel="stylesheet">
-    <!-- Plugins Stylesheets -->
-  
-    <link rel="stylesheet" href="/css/bootstrap.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Document title -->
+        <title>TRAC</title>
+        <link rel="icon" href="images/logo.png" type="image/icon type">
+        <!-- Stylesheets & Fonts -->
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRajdhani:400,600,700"
+            rel="stylesheet">
+        <!-- Plugins Stylesheets -->
+    <link rel="stylesheet" href="css/font-awesome/font-awesome.css">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/aos/aos.css">
+        <link rel="stylesheet" href="/css/swiper/swiper.css">
+        <link rel="stylesheet" href="css/lightgallery.min.css">
+         
+        
+        <!-- Template Stylesheet -->
+        <link rel="stylesheet" href="/css/blog.css">
+        <!-- Responsive Stylesheet -->
+        <link rel="stylesheet" href="/css/responsive.css">
     
- 
-   
-    <!-- Template Stylesheet -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="css/blog.css">
-    <!-- Responsive Stylesheet -->
-    <link rel="stylesheet" href="/css/responsive.css">
-   
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
 
 
 </head>
 
+
+  
+
 <body>
    <!-- Loader Start -->
-  
+   
+    <!-- Loader End -->
     <!-- Header Start -->
     <header class="position-absolute w-100">
         <div class="container">
@@ -52,10 +56,10 @@
                 <a class="search-icon d-none d-md-block" href="#"><i class="fa fa-search"></i></a>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li> 
-                        <li class="nav-item"><a class="nav-link" href="/about">About us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/" >Home</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="/about"  >About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/projects"  >Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/blog" >Blog</a></li>
                        
                         
                         
@@ -74,33 +78,65 @@
             </nav>
         </div>
     </header>
-    <!-- Header End -->
+    <!--CAROUSEL-->
+
+<div class="bd-example featured-section">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://cdn.pixabay.com/photo/2016/04/14/13/06/landscape-1328858_1280.jpg" class="d-block w-100" alt="..." >
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="carousel-title">Charting The Heavens</h1>
+          <p>-By Shanmugh Balan <br>8 min read</p>
+        </div>
+      </div>
+      <div class="carousel-item min-vh-100">
+        <img src="https://cdn.pixabay.com/photo/2015/12/29/14/51/mountains-1112911_1280.jpg" class="d-block w-100" alt="..." >
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://pixabay.com/get/g31315388a004c5253cca8cc4428a2209665f7425732d4b48cf2c9895ab5b7066ad6b0ab95bd25c8180b9a1aa1176f654.jpg" class="d-block w-100" alt="..." >
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<div class="blog-container">
 
 
 
 
-  
 
-<div class="row">
  <%  posts.forEach(function(post){ %>
 
-   <div class="column">
-      <div class="blog-card">
-	     <img class="blog-img" src="images/radio_astronomy.jpg" >
-	         <div class="text-overlay">
+ 
+	         
 		        <h2><%-post.title%></h2>
 		        <p> <%-post.content.substring(0, 100) + " ..."%>
                 <a href="/blog/posts/<%=post._id%>" class="read-more">Read More</a></p>
-	         </div>
-      </div>
-   </div>
+	         
+     
    <% }) %>
- </div>
+
+
+</div>
 
 
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 <footer id="dk-footer" class="dk-footer">
         <div class="container">
             <div class="row">
