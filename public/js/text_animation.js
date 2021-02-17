@@ -7,33 +7,27 @@ vh=canvas.height;
 let particleArray=[];
 let particleArray2=[];
 let particleArray3=[];
+let textScale = window.innerWidth/400 +3;
+let textScale2=window.innerWidth/600  +1;
+if  (textScale2 > 7) {textScale2 =7};
+if  (textScale > 8) {textScale =8};
  let adjustX=0;
 let adjustY=-0;
 let adjustX2=0;
 let adjustY2=0;
-let scaleX=0;
-let scaleY=0;
-let scaleX2=0;
-let scaleY2=0;
 
-if(vh>600){
-     adjustX=0.033*vw;
- adjustY=-0.01*vh;
- adjustX2=0.0718*vw;
-adjustY2=0.143*vh;
- scaleX=7;
- scaleY=7;
-scaleX2=4;
-scaleY2=4;}
-else if(vh>400){
- adjustX=0.0425*vw;
- adjustY=-0.0085*vh;
- adjustX2=0.108*vw;
- adjustY2=0.19*vh;
-scaleX=6;
-scaleY=6;
- scaleX2=3;
-scaleY2=3;}
+
+
+
+    adjustX = (window.innerWidth/(2*textScale))-50;
+  adjustY = (window.innerHeight/(2*textScale))-50;
+ 
+ adjustX2= (window.innerWidth/(2*textScale2))-73;
+ adjustY2 = (window.innerHeight/(2*textScale))+66;
+ 
+
+ 
+
 
 //handle mouse
 const mouse={
@@ -179,7 +173,7 @@ function Init(){
             if(textCoordinates.data[(y*4*textCoordinates.width)+(x*4)+3]>128){
                 let positionX=x+adjustX;
                 let positionY=y+adjustY;
-                particleArray.push(new Particle(positionX*scaleX,positionY*scaleY))
+                particleArray.push(new Particle(positionX*textScale,positionY*textScale))
         
             }
         }
@@ -190,7 +184,7 @@ function Init(){
             if(textCoordinates2.data[(m*4*textCoordinates2.width)+(n*4)+3]>128){
                 let positionX2=n+adjustX2;
                 let positionY2=m+adjustY2;
-                particleArray3.push(new Particle(positionX2*scaleX2,positionY2*scaleY2));
+                particleArray3.push(new Particle(positionX2*textScale2,positionY2*textScale2));
 
         
             }
