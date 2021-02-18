@@ -7,7 +7,7 @@ vh=canvas.height;
 let particleArray=[];
 let particleArray2=[];
 let particleArray3=[];
-let textScale = window.innerWidth/400 +3;
+let textScale = window.innerWidth/300 +2;
 let textScale2=window.innerWidth/600  +1;
 if  (textScale2 > 7) {textScale2 =7};
 if  (textScale > 8) {textScale =8};
@@ -19,11 +19,11 @@ let adjustY2=0;
 
 
 
-    adjustX = (window.innerWidth/(2*textScale))-50;
+    adjustX = (window.innerWidth/(2*textScale))-52;
   adjustY = (window.innerHeight/(2*textScale))-50;
  
- adjustX2= (window.innerWidth/(2*textScale2))-73;
- adjustY2 = (window.innerHeight/(2*textScale))+66;
+ adjustX2= (window.innerWidth/(2*textScale2))-79;
+ adjustY2 = (window.innerHeight/(2*textScale))+67;
  
 
  
@@ -45,7 +45,7 @@ ctx.fillStyle='white';
 ctx.font='30px Georgia';
 ctx.fillText('TRAC',10,60);
 ctx.fillStyle='white';
-ctx.font='20px 	Monaco';
+ctx.font='20px 	georgia';
 ctx.fillText('BITS Pilani',22,80);
 
 ctx.strokeStyle='white';
