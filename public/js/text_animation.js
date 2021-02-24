@@ -9,6 +9,7 @@ let particleArray2=[];
 let particleArray3=[];
 let textScale = window.innerWidth/300 +2;
 let textScale2=window.innerWidth/600  +1;
+let hwr=vh/vw;
 if  (textScale2 > 7) {textScale2 =7};
 if  (textScale > 8) {textScale =8};
  let adjustX=0;
@@ -24,6 +25,9 @@ let adjustY2=0;
  
  adjustX2= (window.innerWidth/(2*textScale2))-79;
  adjustY2 = (window.innerHeight/(2*textScale))+67;
+ if(vh>600){
+     adjustY2 = (window.innerHeight/(2*textScale))+85;
+ }
  
 
  
