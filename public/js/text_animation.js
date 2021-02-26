@@ -26,7 +26,7 @@ adjustY = (window.innerHeight/(2*textScale))-50;
 adjustX2= (window.innerWidth/(2*textScale2))-79;
 adjustY2 = (window.innerHeight/(2*textScale))+67;
 if(vh<800){
-    adjustY2 = (window.innerHeight/(2*textScale))+100;
+    adjustY2 = (window.innerHeight/(2*textScale))+95;
 }
 
 
