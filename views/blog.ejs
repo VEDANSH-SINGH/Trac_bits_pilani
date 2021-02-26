@@ -114,7 +114,9 @@
   </div>
 </div>
 
-
+<div class="topic-div">
+    <h1 class="topic-title">Recent Blogs</h1>
+</div>
 <div class="blog-container">
 
 
@@ -124,10 +126,21 @@
  <%  posts.forEach(function(post){ %>
 
  
-	         
-		        <h2><%-post.title%></h2>
-		        <p> <%-post.content.substring(0, 100) + " ..."%>
+	        <div class="container-row">
+                
+		      <div class="blog-info">
+                  <div class="author-credentials">
+                      <img class="author-img" src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113__480.png"></img>
+                  <h6 class="blog-info-text">Author Name</h6>
+                  </div>
+                 <h2 class="blog-title"><%-post.title%></h2>
+		        <p> <%-post.content.substring(0, 30) + " ..."%>
                 <a href="/blog/posts/<%=post._id%>" class="read-more">Read More</a></p>
+                <h6 class="blog-info-text">  <i class="fa fa-eye" aria-hidden="true"></i> 100 &nbsp <i class="fa fa-star" aria-hidden="true"></i> 2 Min Read</h6>
+                </div> 
+                
+               <div class=blog-image><img class="blog-thumbnail" src="https://cdn.pixabay.com/photo/2011/12/15/11/37/galaxy-11188__480.jpg"></img>
+                </div> </div>
 	         
      
    <% }) %>
