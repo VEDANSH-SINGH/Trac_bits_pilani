@@ -16,16 +16,11 @@ if  (textScale > 8) {textScale =8};
 let adjustY=-0;
 let adjustX2=0;
 let adjustY2=0;
-
-
-
-
 adjustX = (window.innerWidth/(2*textScale))-52;
 adjustY = (window.innerHeight/(2*textScale))-50;
-
 adjustX2= (window.innerWidth/(2*textScale2))-79;
 adjustY2 = (window.innerHeight/(2*textScale))+67;
-if(vh<800){
+if(vh<hwr){
     adjustY2 = (window.innerHeight/(2*textScale))+95;
 }
 

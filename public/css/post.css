@@ -1,32 +1,62 @@
-.page-content{
-  margin-top:17vh;
-  padding-left:10vw;
-  padding-right:10vw;
-  border-bottom:red 2px solid;
-}
-.page-title{
-  text-align: center;
-  color:white;
-  text-decoration: underline;
-  text-decoration-color: red;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
+
+.post-title{
+  padding-top:3vh;
   
+  
+  position:relative;
+  padding-bottom: 4vh;
+  color:rgb(219, 5, 5);
+  text-align: center;
+
+}
+.post-title>h1{
+  color: red;
+  font-size: 4rem;
+  text-shadow: rgb(70, 3, 3) 4px 2px;
+}
+.title-captions>h4{
+  font-size:1.2rem;
+}
+.post-image{
+ padding:1.5vmin;
+ text-align:center;
+}
+.post-image>h4{
+  color:rgb(197, 185, 185);
+  font-size:1.2rem;
+  margin-top:1vh;
+}
+.post-image>img{
+  
+  align-items: center;
  
-}
-
-.team-head{
-  padding:2vh;
-  text-align: center;
-  color:white;
-   text-decoration: underline;
-  text-decoration-color: red;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
   
-
+  display: block;
+   margin: 0 auto;
+  height:auto;
+  width:70%;
+  border-radius: 2vw;
+border:red 3px dotted;
 }
+.post-content{
+  color:rgb(207, 204, 204);
+  margin:20vh;
+    position: relative;
+    height: 100%;
+    
+    z-index: 100;
+    text-align: center;
+    
+}
+
+/*-----------------------------------
+    1 - Header
+------------------------------------*/
+
+
+
 header{
+
 top:0px;
   
   color: #fff;
@@ -289,3 +319,4 @@ color: #878787;
 transition: all 0.3s; }
 .footer-widget a:hover {
   color: red; }
+
