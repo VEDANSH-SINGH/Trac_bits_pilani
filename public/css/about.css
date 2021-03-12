@@ -1,8 +1,70 @@
+.position{
+  text-align: center;
+  margin:10px;
+}
+.profile-details{
+  background-color:black;
+  height:59%;
+}
+.avatar{
+  margin:25%;
+  height:125px;
+  width:125px;
+  border-radius:50%;
+  border:red 1px solid;
+}
+.card-bg{
+ display:flex;
+ align-items: center;
+ justify-content: center;
+  position: relative;
+  height:41%;
+  width:100%;
+  
+  
+
+  background-color: white;
+  
+}
+.card-container{
+  display: flex;
+  min-width:100%;
+  height:60vh;
+   flex-wrap: wrap;
+  justify-content:center;
+  align-items: center;
+}
+.profile-card{
+  display:flex;
+  flex-direction: column;
+  width:270px;
+  border-radius:20px;
+  margin:20px;
+  height:95%;
+ overflow: hidden; 
+  
+  
+  box-shadow: grey 1px 1px 10px 2px;
+}
+.profile-card:hover{animation: pulse;
+  animation-duration: 2s ;
+  animation-fill-mode: forwards;
+  
+  
+}
+@keyframes pulse{
+  0%{ transform:scale3d(1,1,1,);
+}
+
+
+100%{
+  transform:scale3d(1.1,1.1,1.1);
+}}
 .page-content{
   margin-top:17vh;
   padding-left:10vw;
   padding-right:10vw;
-  border-bottom:red 2px solid;
+  
 }
 .page-title{
   text-align: center;
@@ -10,20 +72,38 @@
   text-decoration: underline;
   text-decoration-color: red;
   text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
+  text-underline-offset: 6px;
   
  
 }
 
 .team-head{
+  position:relative;
+  
+
   padding:2vh;
+  margin-bottom: 20vh;
+}
+.team-head>h1{
+  padding:2vmin;
   text-align: center;
   color:white;
    text-decoration: underline;
   text-decoration-color: red;
   text-decoration-thickness: 2px;
-  text-underline-offset: 3px;
+  text-underline-offset: 6px;
   
+
+}
+.team-cards{
+  padding-left:10vw;
+  padding-right:10vw;
+  display: grid;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr ;
+
+}
+.club-position{
+color:white;
 
 }
 header{
@@ -41,7 +121,7 @@ header a {
 
 body{
   
-background: linear-gradient(0deg, rgb(0, 0, 0) 0%,rgb(20, 20, 20) 50%, rgb(0, 0, 0) 100%);
+background: linear-gradient(0deg, rgb(0, 0, 0) 0%,rgb(15, 15, 15) 50%, rgb(0, 0, 0) 100%);
   margin: 0;
   overflow-x: hidden;
   
