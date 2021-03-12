@@ -19,7 +19,7 @@ let adjustY2=0;
 adjustX = (window.innerWidth/(2*textScale))-52;
 adjustY = (window.innerHeight/(2*textScale))-50;
 adjustX2= (window.innerWidth/(2*textScale2))-79;
-if(vh>800){
+if(vh>700){
     adjustY2 = (window.innerHeight/(2*textScale))+77;
 }
 else{
