@@ -80,7 +80,7 @@ class Particle {
         }
         draw3(){
             this.size=1.5;
-            this.fillStyle='white';
+            ctx.fillStyle='rgb(23,86,203)';
             ctx.beginPath();
             ctx.arc(this.x,this.y,this.size,0,Math.PI*2)
             ctx.closePath();
@@ -211,12 +211,12 @@ function animate(){
 
     }
     for(let i=0;i<particleArray3.length;i++){
-        particleArray3[i].draw3();
+       particleArray3[i].draw3();
         particleArray3[i].update();
         
 
     }
-    connect
+
     
     requestAnimationFrame(animate);
 }
@@ -250,7 +250,7 @@ canvas2.height=window.innerHeight;
 function init(){
     particleArray2=[];
     
-    for(let i=0;i<700;i++){
+    for(let i=0;i<600;i++){
             let x=Math.random()*canvas2.width;
         let y=Math.random()*canvas2.height;
 
