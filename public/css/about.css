@@ -10,6 +10,7 @@
   border-radius: 30px;
   background-color: rgba(243, 239, 239, 0.1);
   border-top: rgb(245, 6, 6);
+  margin-bottom: 50px;
 }
 .grid-wrapper>h3{
   text-shadow: 0px 0px 2px red;
@@ -22,7 +23,8 @@ hr{
 display:grid;
 grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 30px;
-  align-items: stretch;
+  grid-auto-rows: minmax(min-content, max-content);
+  align-items: center;
   margin: 1rem 4rem 4rem 4rem;
 }
 
@@ -30,7 +32,7 @@ grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   background-color: black;
   border-radius: 20px;
   box-shadow: 1px 1px 10px 2px red;
-  height:65vh;
+  height:65vmin;
   width:90%;
 }
 
@@ -61,7 +63,13 @@ grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 .text>h5{
   text-shadow: 0px 0px 4px red;
 }
-
+.text>h6{
+  text-shadow: 0px 0px 4px red;
+}
+.social-container{
+  padding:10px;
+  position: relative;
+}
 .social-icons {
   padding: 0;
   list-style: none;

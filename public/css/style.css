@@ -50,7 +50,7 @@ margin:0}
     left:0;
     z-index:0;
     background: radial-gradient(circle, rgba(0,0,0,0) 88%, rgba(0,0,0,0.45) 100%),
-						linear-gradient(0deg, rgb(0, 0, 0) 40%, rgb(24, 92, 219) 100%);
+						linear-gradient(0deg, rgb(0, 0, 0) 40%, rgb(15, 114, 206) 100%);
  
 }
 
@@ -64,7 +64,7 @@ body{
     1 - Hero
 ------------------------------------*/
 .hero {
-  background-color:  rgb(24, 92, 219);
+  background-color:  rgb(6, 68, 126);
  /* background: url("../images/bgimage.jpg") no-repeat center;*/
   background-size: cover;
   overflow: visible;
