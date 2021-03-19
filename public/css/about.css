@@ -23,7 +23,7 @@ hr{
 display:grid;
 grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 30px;
-  grid-auto-rows: minmax(min-content, max-content);
+  
   align-items: center;
   margin: 1rem 4rem 4rem 4rem;
 }
@@ -49,6 +49,7 @@ grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   height: 175px;
   width:175px;
   border:1px solid red;
+  object-fit: cover;
 
 }
 

@@ -18,8 +18,12 @@ mongoose.connect( "mongodb+srv://vedansh_singh:Vedansh2301@cluster0.zeho1.mongod
 , {useNewUrlParser: true});
 
 const postSchema = {
+  author:String,
+  min_read:String,
   title: String,
-  content: String
+  content: String,
+  author_imgurl:String,
+  date:String
 };
 
 const Post = mongoose.model("Post", postSchema);
@@ -51,8 +55,11 @@ app.post("/blog/compose", function(req, res){
   post = new Post({
     title: req.body.postTitle,
     content: req.body.postBody,
-  
-  });
+    author:req.body.author,
+    min_read:req.body.min_read,
+    author_imgurl:req.body.author_imgurl,
+    date:req.body.date
+  })
   
   }
   post.save(function(err){
@@ -71,7 +78,11 @@ app.get("/blog/posts/:postId", function(req, res){
   Post.findOne({_id: requestedPostId}, function(err, post){
     res.render("post", {
       title: post.title,
-      content: post.content
+      content: post.content,
+      author:post.author,
+      min_read:post.min_read,
+      date:post.date,
+      author_imgurl:post.author_imgurl
     });
   });
 });
