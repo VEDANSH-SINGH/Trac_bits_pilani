@@ -103,12 +103,13 @@ display: inline-block;
   height: 150px;
   width:220px;
  border-radius: 10%;
+ border:2px solid red;
 }
 .blog-image{
   position:absolute;
  margin-left:55%;
  
- 
+  
  
  
   

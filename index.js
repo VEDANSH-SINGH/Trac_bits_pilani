@@ -1,7 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
-var _ = require('lodash')
+var _ = require('lodash');
+let post=[];
 
 const mongoose = require('mongoose');
 
@@ -13,7 +14,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect('mongodb://localhost:27017/newT', {useNewUrlParser: true});
+mongoose.connect( "mongodb+srv://vedansh_singh:Vedansh2301@cluster0.zeho1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+, {useNewUrlParser: true});
 
 const postSchema = {
   title: String,
@@ -45,12 +47,14 @@ app.get('/blog/compose', function(req, res) {
   res.render('compose');
 });
 app.post("/blog/compose", function(req, res){
-  const post = new Post({
+  if(req.body.password==='programmingishard'){
+  post = new Post({
     title: req.body.postTitle,
-    content: req.body.postBody
+    content: req.body.postBody,
+  
   });
-
-
+  
+  }
   post.save(function(err){
     if (!err){
         res.redirect("/blog");
