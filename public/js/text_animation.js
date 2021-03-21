@@ -52,8 +52,6 @@ else{
 {
 mouse.x=e.touches[0].pageX;
 mouse.y=e.touches[0].pageY;
-console.log("move",_x)
-
     
 });
 }
