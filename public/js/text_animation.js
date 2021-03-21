@@ -48,8 +48,7 @@ canvas.addEventListener('mousemove',function(event){
     
 });}
 else{
-    document.getElementById("id").addEventListener("touchmove",function(e)
-{
+    canvas.addEventListener("touchmove",function(e){
 mouse.x=e.touches[0].pageX;
 mouse.y=e.touches[0].pageY;
     
