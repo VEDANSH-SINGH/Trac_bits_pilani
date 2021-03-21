@@ -40,12 +40,23 @@ const mouse={
     y:null,
     radius:100
 }
+if(vh<vw){
 canvas.addEventListener('mousemove',function(event){
     mouse.x=event.x;
     mouse.y=event.y;
    // console.log(mouse.x,mouse.y);
     
+});}
+else{
+    document.getElementById("id").addEventListener("touchmove",function(e)
+{
+mouse.x=e.touches[0].pageX;
+mouse.y=e.touches[0].pageY;
+console.log("move",_x)
+
+    
 });
+}
 ctx.fillStyle='white';
 ctx.font='30px Georgia';
 ctx.fillText('TRAC',10,60);
