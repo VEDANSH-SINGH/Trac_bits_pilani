@@ -25,12 +25,15 @@ if(vh>600){
 else{
     adjustY2 = (window.innerHeight/(2*textScale))+57+22.1/whr;
 }
-if(whr<1.5){
-    adjustY2 = (window.innerHeight/(2*textScale))+63+22.1/whr;
-}
 
 console.log(vh);
 console.log(vw);
+if(whr<1.5){
+    adjustY2 = (window.innerHeight/(2*textScale))+63+22.1/whr;
+}
+if(vh>vw){
+    adjustY2 = (window.innerHeight/(2*textScale))+100+22.1/whr;
+}
 //handle mouse
 const mouse={
     x:null,
