@@ -19,21 +19,15 @@ let adjustY2=0;
 adjustX = (window.innerWidth/(2*textScale))-52;
 adjustY = (window.innerHeight/(2*textScale))-50;
 adjustX2= (window.innerWidth/(2*textScale2))-79;
-if(vh>700){
+if(vh>600){
     adjustY2 = (window.innerHeight/(2*textScale))+77;
 }
 else{
     adjustY2 = (window.innerHeight/(2*textScale))+67;
 }
 
-if(vh<hwr){
-    adjustY2 = (window.innerHeight/(2*textScale))+95;
-}
-
-
-
-
-
+console.log(vh);
+console.log(vw);
 //handle mouse
 const mouse={
     x:null,
@@ -52,12 +46,10 @@ ctx.fillText('TRAC',10,60);
 ctx.fillStyle='white';
 ctx.font='20px 	georgia';
 ctx.fillText('BITS Pilani',22,80);
-
 ctx.strokeStyle='white';
 ctx.strokeRect(0,0,100,100);
 const textCoordinates=ctx.getImageData(0,0,250,60);
 const textCoordinates2=ctx.getImageData(0,62,300,70);
-
 class Particle {
     constructor(x,y){
         this.x=x;
@@ -169,7 +161,6 @@ class Stars{constructor(x,y){
         } 
 
 }
-
 function Init(){
     particleArray=[];
     particelArray3=[];
@@ -190,34 +181,21 @@ function Init(){
                 let positionX2=n+adjustX2;
                 let positionY2=m+adjustY2;
                 particleArray3.push(new Particle(positionX2*textScale2,positionY2*textScale2));
-
-        
             }
         }
-
     }
- 
- 
-    
-
 }
 Init();
-
 function animate(){
     ctx.clearRect(0,0,canvas.width,canvas.height);
     for(let i=0;i<particleArray.length;i++){
         particleArray[i].draw();
         particleArray[i].update();
-
     }
     for(let i=0;i<particleArray3.length;i++){
        particleArray3[i].draw3();
         particleArray3[i].update();
-        
-
     }
-
-    
     requestAnimationFrame(animate);
 }
 animate();
@@ -236,10 +214,7 @@ function connect(){
                  ctx.moveTo(particleArray[a].x,particleArray[a].y);
                  ctx.lineTo(particleArray[b].x,particleArray[b].y);
                  ctx.stroke();
-
          }
-
-
     }
 }
 }
@@ -249,35 +224,20 @@ canvas2.width=window.innerWidth;
 canvas2.height=window.innerHeight;
 function init(){
     particleArray2=[];
-    
     for(let i=0;i<600;i++){
             let x=Math.random()*canvas2.width;
         let y=Math.random()*canvas2.height;
-
              particleArray2.push(new Stars(x,y));
-              
-        
         }
-
     }
- 
-    
-
-
 init();
 function animate2(){
     ctx2.clearRect(0,0,canvas2.width,canvas2.height);
      for(let i=0;i<particleArray2.length;i++){
         particleArray2[i].draw2();
          particleArray2[i].update2();
-
         }
-
-     
-    
     requestAnimationFrame(animate2);
-    
-
 }
 animate2();
 
