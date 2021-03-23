@@ -9,6 +9,9 @@
   text-align: center;
 
 }
+header >.container{
+  max-width:90%;
+}
 .post-title>h1{
   color: red;
   font-size: 4rem;

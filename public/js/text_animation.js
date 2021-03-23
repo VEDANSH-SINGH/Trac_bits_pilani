@@ -20,10 +20,10 @@ adjustX = (window.innerWidth/(2*textScale))-52;
 adjustY = (window.innerHeight/(2*textScale))-50;
 adjustX2= (window.innerWidth/(2*textScale2))-79;
 if(vh>600){
-    adjustY2 = (window.innerHeight/(2*textScale))+67 + 26/whr;
+    adjustY2 = (window.innerHeight/(2*textScale))+67 + 26/(0.9*(whr**1.1));
 }
 else{
-    adjustY2 = (window.innerHeight/(2*textScale))+57+22.1/whr;
+    adjustY2 = (window.innerHeight/(2*textScale))+57+22.1/(1*whr);
 }
 
 console.log(vh);
@@ -46,14 +46,19 @@ canvas.addEventListener('mousemove',function(event){
     mouse.y=event.y;
    // console.log(mouse.x,mouse.y);
     
-});}
-else{
+});}else{
     canvas.addEventListener("touchmove",function(e){
 mouse.x=e.touches[0].pageX;
 mouse.y=e.touches[0].pageY;
     
 });
 }
+window.addEventListener("resize", windowReSize);
+function windowReSize(){
+  location.reload();
+};
+//canvas.onload=animate3();
+
 ctx.fillStyle='white';
 ctx.font='30px Georgia';
 ctx.fillText('TRAC',10,60);
@@ -72,6 +77,11 @@ class Particle {
         this.BaseX=this.x;
         this.BaseY=this.y;
         this.density=(Math.random()*400)+1;
+        this.rndm_x=Math.random()*vw;
+        this.rndm_y=Math.random()*vh;
+        this.x=this.rndm_x;
+        this.y=this.rndm_y;
+        
     }
         draw()
         {
@@ -86,12 +96,12 @@ class Particle {
         }
         draw3(){
             this.size=1.5;
+          
         ctx.fillStyle='rgb(22,124,155)';
             ctx.beginPath();
             ctx.arc(this.x,this.y,this.size,0,Math.PI*2)
             ctx.closePath();
             ctx.fill();
-
         }
            draw2()
         {
@@ -113,13 +123,28 @@ class Particle {
             let forceDirectionY=dy/distance;
             let maxDistance=mouse.radius;
             let force=(maxDistance-distance)/maxDistance;
-            let directionX=force*this.density*forceDirectionX;
-            let directionY=force*this.density*forceDirectionY;
+            let directionX=force*this.density*forceDirectionX/20;
+            let directionY=force*this.density*forceDirectionY/20;
             if (distance<mouse.radius){
                   this.x -= directionX;
                   this.y -=directionY;
             }else{
               if(this.x !== this.BaseX){
+                  let dx =this.x-this.BaseX;
+                  this.x-=dx/25;
+                              }
+             if(this.y !== this.BaseY){
+                  let dy=this.y-this.BaseY;
+                  this.y -=dy/25;
+                              }
+                
+            }
+            
+        }
+        update2(){
+            this.x=Math.random()*canvas.width;
+            this.y=Math.random()*canvas.height;
+             if(this.x !== this.BaseX){
                   let dx =this.x-this.BaseX;
                   this.x-=dx/10;
                               }
@@ -127,10 +152,6 @@ class Particle {
                   let dy=this.y-this.BaseY;
                   this.y -=dy/10;
                               }
-                
-            }
-            
-        }update2(){
            
             //this.size=3*Math.random();
            //this.y=this.y-1/3;
@@ -254,7 +275,19 @@ function animate2(){
     requestAnimationFrame(animate2);
 }
 animate2();
-
+/*function animate3(){
+     ctx.clearRect(0,0,canvas.width,canvas.height);
+    for(let i=0;i<particleArray.length;i++){
+        particleArray[i].draw();
+        particleArray[i].update2();
+    }
+    for(let i=0;i<particleArray3.length;i++){
+       particleArray3[i].draw3();
+        particleArray3[i].update2();
+    }
+    requestAnimationFrame(animate);
+}
+*/
 
 
 

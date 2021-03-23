@@ -14,7 +14,9 @@ header {
 header a {
   color: rgb(112, 5, 5);
 }
-
+header >.container{
+  max-width:90%;
+}
 .featured-section{
   position:static;
   top:0;

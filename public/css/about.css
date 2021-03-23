@@ -2,6 +2,9 @@
 .team{
   margin:4vmin
 }
+header >.container{
+  max-width:90%;
+}
 .grid-wrapper{
   padding:3vmin;
   color:rgba(238, 234, 234, 0.973);
