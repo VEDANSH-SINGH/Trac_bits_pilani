@@ -56,16 +56,14 @@ mouse.y=e.touches[0].pageY;
     mouse.x=event.x;
     mouse.y=event.y;
     });
-    window.addEventListener("resize", windowReSize);}
-
-    function windowReSize(){
-       location.reload();
-};
-
-window.addEventListener("resize", windowReSize);
+    
+   window.addEventListener("resize", windowReSize);
 function windowReSize(){
   location.reload();
-};
+};}
+
+ 
+
 //canvas.onload=animate3();
 
 ctx.fillStyle='white';
