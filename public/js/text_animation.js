@@ -40,22 +40,28 @@ const mouse={
     y:null,
     radius:100
 }
-if(vh<vw){
-canvas.addEventListener('mousemove',function(event){
-    mouse.x=event.x;
-    mouse.y=event.y;
-    window.addEventListener("resize", windowReSize);})
-function windowReSize(){
-  location.reload();
-   // console.log(mouse.x,mouse.y);
-    
-}}else{
-    canvas.addEventListener("touchmove",function(e){
+ function is_touch_enabled() {
+            return ( 'ontouchstart' in window ) || 
+                   ( navigator.maxTouchPoints > 0 ) ||
+                   ( navigator.msMaxTouchPoints > 0 );
+        }
+if(is_touch_enabled()){
+     canvas.addEventListener("touchmove",function(e){
 mouse.x=e.touches[0].pageX;
 mouse.y=e.touches[0].pageY;
     
 });
-}
+}else{
+    canvas.addEventListener('mousemove',function(event){
+    mouse.x=event.x;
+    mouse.y=event.y;
+    });
+    window.addEventListener("resize", windowReSize);}
+
+    function windowReSize(){
+       location.reload();
+};
+
 window.addEventListener("resize", windowReSize);
 function windowReSize(){
   location.reload();
