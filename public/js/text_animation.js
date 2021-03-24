@@ -44,9 +44,12 @@ if(vh<vw){
 canvas.addEventListener('mousemove',function(event){
     mouse.x=event.x;
     mouse.y=event.y;
+    window.addEventListener("resize", windowReSize);})
+function windowReSize(){
+  location.reload();
    // console.log(mouse.x,mouse.y);
     
-});}else{
+}}else{
     canvas.addEventListener("touchmove",function(e){
 mouse.x=e.touches[0].pageX;
 mouse.y=e.touches[0].pageY;

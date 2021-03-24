@@ -37,6 +37,7 @@ grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   box-shadow: 1px 1px 10px 2px red;
   height:65vmin;
   width:90%;
+  
 }
 
 .profile-div{
