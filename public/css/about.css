@@ -1,12 +1,16 @@
-
+*{
+  box-sizing: border-box;
+}
 .team{
   margin:4vmin
 }
-header >.container{
-  max-width:90%;
+@media only screen and (min-width: 500px) {
+  header >.container{
+  max-width:92%;
+}
 }
 .grid-wrapper{
-  padding:3vmin;
+ 
   color:rgba(238, 234, 234, 0.973);
   align-items: center;
   text-align: center;
@@ -16,6 +20,8 @@ header >.container{
   margin-bottom: 50px;
 }
 .grid-wrapper>h3{
+  margin:10px;
+  padding: 20px 10px 10px 10px;
   text-shadow: 0px 0px 2px red;
 }
 hr{
@@ -23,20 +29,23 @@ hr{
  margin-top:1em;
 }
 .team-grid{
+   justify-items:center;
 display:grid;
 grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-gap: 30px;
+grid-auto-flow: dense;
+  padding:0px 30px 30px 30px;
   
-  align-items: center;
-  margin: 1rem 4rem 4rem 4rem;
+  margin:0px 10px 0px 10px;
 }
 
 .team-grid > div{
   background-color: black;
   border-radius: 20px;
   box-shadow: 1px 1px 10px 2px red;
-  height:65vmin;
+  height:400px;
   width:90%;
+  padding:15px;
   
 }
 

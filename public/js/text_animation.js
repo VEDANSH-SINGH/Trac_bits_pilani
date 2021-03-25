@@ -31,7 +31,7 @@ console.log(vw);
 if(whr<1.5){
     adjustY2 = (window.innerHeight/(2*textScale))+63+22.1/whr;
 }
-if(vh>vw){
+if(vh>0.85*vw){
     adjustY2 = (window.innerHeight/(2*textScale))+100+22.1/whr;
 }
 //handle mouse
