@@ -20,15 +20,14 @@ adjustX = (window.innerWidth/(2*textScale))-52;
 adjustY = (window.innerHeight/(2*textScale))-50;
 adjustX2= (window.innerWidth/(2*textScale2))-79;
 if(vh>600){
-    adjustY2 = (window.innerHeight/(2*textScale))+67 + 26/(0.9*(whr**1.1));
+    adjustY2 = (window.innerHeight/(2*textScale))+69 + 24/(0.9*(whr**1.1));
 }
 else{
     adjustY2 = (window.innerHeight/(2*textScale))+57+22.1/(1*whr);
 }
 
 console.log(vh);
-console.log(vw);
-if(whr<1.5){
+if(whr<1.1){
     adjustY2 = (window.innerHeight/(2*textScale))+70+22.1/whr;
 }
 if(vh>vw){

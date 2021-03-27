@@ -90,16 +90,23 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img src="https://cdn.pixabay.com/photo/2016/04/14/13/06/landscape-1328858_1280.jpg" class="d-block w-100" alt="..." >
-        <div class="carousel-caption  d-md-block">
-          <h1 class="carousel-title">Charting The Heavens</h1>
+        <div class="container">
+            <div class="carousel-caption">
+          <div><h1 class="carousel-title">Charting The Heavens</h1>
           <p>-By Shanmugh Balan <br>8 min read</p>
         </div>
+        </div>
+    </div>
       </div>
       <div class="carousel-item min-vh-100">
         <img src="https://cdn.pixabay.com/photo/2015/12/29/14/51/mountains-1112911_1280.jpg" class="d-block w-100" alt="..." >
         <div class="carousel-caption  d-md-block">
+            <div class="carousel-caption">
+          <div>
           <h5>Second slide label</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          </div>
         </div>
       </div>
       <div class="carousel-item">
@@ -135,7 +142,7 @@
                   </div>
                  <h2 class="blog-title"><%-post.title%></h2>
 		        <p> <%-post.content.substring(0, 30) + " ..."%>
-                <button id="view"><a href="/blog/posts/<%=post._id%>" class="read-more">Read More</a></button></p>
+                <a href="/blog/posts/<%=post._id%>" class="read-more">Read More</a></p>
                 <h6 class="blog-info-text">  <i class="fa fa-eye" aria-hidden="true"></i> 100 &nbsp <i class="fa fa-star" aria-hidden="true"></i> 2 Min Read</h6>
                 </div> 
                 
