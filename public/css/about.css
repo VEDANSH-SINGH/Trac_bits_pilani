@@ -2,7 +2,8 @@
   box-sizing: border-box;
 }
 .team{
-  margin:4vmin
+  margin:4vmin;
+  margin-top:24vh;
 }
 @media only screen and (min-width: 500px) {
   header >.container{
@@ -316,34 +317,140 @@ form button.btn-primary:hover {
   background-color: rgb(53, 2, 33);
   color: #ee1515;
 }
+.footer{
+width:100%;
+background-color: black;
 
-
-
-
-/*-----------------------------------
-    1 - Foot Note
-------------------------------------*/
-.footer-widget p {
-  margin-bottom: 27px;
 }
-p {
-  font-family: 'Nunito', sans-serif;
-  font-size: 16px;
-color:white;
-  line-height: 28px;
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+ height: min-content;
+  background-color: black;
+ justify-content:space-around;
+ align-items: flex-start;
+
 }
- .animate-border {
+.flex-container>.card{
+  z-index: 100;
+  position: relative;
+  background: rgb(36, 34, 34);
+width: 22%;
+ padding-left:2vmin;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top:-50px;
+padding-bottom: 3vmin;
+margin-bottom: -30px;
+}
+.card>img{
+width:80%;
+margin-top: 20px;
+height: 190px;
+padding:1vmin;
+object-fit: fill;
+}
+.card>h3{
+  margin-top: 30px;
+  color: white;
+  font-size: 01.5em;
+  padding:2vmin 0 2vmin 4vmin;
+  
+  align-self: flex-start;
+}
+.credentials{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  padding:5vmin 3vmin 3vmin 3vmin;
+
+} .contact-info{
+  text-align: center;
+}
+.contact-info >p{
+  color: white;
+}
+.contact-icon i {
+  font-size: 24px;
+ padding:2vmin;
+  position: relative;
+  color:red; }
+.resources{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+  padding:7vmin 4vmin 4vmin 4vmin;
+  
+}
+.section-heading>h3{
+  font-size: 1.7em;
+}
+.resources ul{
+  width: 50%;
+float: left;
+list-style: none;
+margin-top: 20px;
+padding: 0; 
+}
+.resources li{
+  margin-bottom: 18px;
+  
+}
+.resources li a{
+  color: grey;
+}
+.card ul li a i{
+    display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  background: #000;
+  
+  color: #fff; }
+   .card ul li a i.fa-facebook {
+    background-color: #3B5998; 
+  }
+   
+   .card ul li a i.fa-linkedin {
+    background-color: #0976B4; 
+  }
+  .card ul li a i.fa-instagram {
+    background-color: #B7242A;
+  }
+.card >ul>li{
+  display: inline-block;
+  margin: 2px;
+}
+.card>ul{
+  margin: 0;
+  padding: 0;
+  padding-left: 3vmin;
+  align-self: flex-start;
+  
+  
+}
+.animate-border {
 position: relative;
 display: block;
 width: 115px;
-height: 3px;
+height: 2px;
+margin: 1px;
 background: #ff0000; }
 
 .animate-border:after {
 position: absolute;
 content: "";
 width: 35px;
-height: 3px;
+height: 2px;
 left: 0;
 bottom: 0;
 border-left: 10px solid #fff;
@@ -367,11 +474,6 @@ animation: animborder 2s linear infinite; }
   -webkit-transform: translateX(70px);
   transform: translateX(70px); } }
 
-.animate-border.border-white:after {
-border-color: #fff; }
-
-.animate-border.border-yellow:after {
-border-color: #F5B02E; }
 
 .animate-border.border-orange:after {
 border-right-color: #ff0015;
@@ -402,126 +504,6 @@ border-left-color: #F7F9F8; }
 100% {
   width: 80%; } } 
 
-.dk-footer {
-  position: relative;
-padding: 75px 0 0;
-background-color: #000000;
-
-width:100%;
-z-index: 2; }
-.dk-footer .contact-us {
-  margin-top: 0;
-  margin-bottom: 30px;
-  padding-left: 80px; }
-  .dk-footer .contact-us .contact-info {
-    margin-left: 50px; }
-  .dk-footer .contact-us.contact-us-last {
-    margin-left: -80px; }
-.dk-footer .contact-icon i {
-  font-size: 24px;
-  top: -15px;
-  position: relative;
-  color:red; }
-
-.dk-footer-box-info {
-position: absolute;
-top: -122px;
-background: #202020;
-padding: 40px;
-z-index: 2; }
-.dk-footer-box-info .footer-social-link h3 {
-  color: #fff;
-  font-size: 24px;
-  margin-bottom: 25px; }
-.dk-footer-box-info .footer-social-link ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0; }
-.dk-footer-box-info .footer-social-link li {
-  display: inline-block; }
-.dk-footer-box-info .footer-social-link a i {
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 40px;
-  background: #000;
-  margin-right: 5px;
-  color: #fff; }
-  .dk-footer-box-info .footer-social-link a i.fa-facebook {
-    background-color: #3B5998; }
-  .dk-footer-box-info .footer-social-link a i.fa-twitter {
-    background-color: #55ACEE; }
-  .dk-footer-box-info .footer-social-link a i.fa-google-plus {
-    background-color: #DD4B39; }
-  .dk-footer-box-info .footer-social-link a i.fa-linkedin {
-    background-color: #0976B4; }
-  .dk-footer-box-info .footer-social-link a i.fa-instagram {
-    background-color: #B7242A; }
-
-.footer-awarad {
-margin-top: 285px;
-display: -webkit-box;
-display: -webkit-flex;
-display: -moz-box;
-display: -ms-flexbox;
-display: flex;
--webkit-box-flex: 0;
--webkit-flex: 0 0 100%;
--moz-box-flex: 0;
--ms-flex: 0 0 100%;
-flex: 0 0 100%;
--webkit-box-align: center;
--webkit-align-items: center;
--moz-box-align: center;
--ms-flex-align: center;
-align-items: center; }
-.footer-awarad p {
-  color: #fff;
-  font-size: 24px;
-  font-weight: 700;
-  margin-left: 20px;
-  padding-top: 15px; }
-
-.footer-info-text {
-margin: 26px 0 32px; }
-
-.footer-left-widget {
-padding-left: 80px; }
-
-.footer-widget .section-heading {
-margin-bottom: 35px; }
-
-.footer-widget h3 {
-font-size: 24px;
-color: #fff;
-position: relative;
-margin-bottom: 15px;
-max-width: -webkit-fit-content;
-max-width: -moz-fit-content;
-max-width: fit-content; }
-
-.footer-widget ul {
-width: 50%;
-float: left;
-list-style: none;
-margin: 0;
-padding: 0; }
-
-.footer-widget li {
-margin-bottom: 18px; }
-
-.footer-widget p {
-margin-bottom: 27px; }
-
-.footer-widget a {
-color: #878787;
--webkit-transition: all 0.3s;
--o-transition: all 0.3s;
-transition: all 0.3s; }
-.footer-widget a:hover {
-  color: red; }
 @media only screen and (min-width:1350px){
   .team-grid{
     grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
