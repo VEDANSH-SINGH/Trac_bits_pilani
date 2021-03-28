@@ -23,7 +23,9 @@ const postSchema = {
   title: String,
   content: String,
   author_imgurl:String,
-  date:String
+  date:String,
+  thumbnail_url:String,
+  view:Number
 };
 
 const Post = mongoose.model("Post", postSchema);
@@ -58,7 +60,9 @@ app.post("/blog/compose", function(req, res){
     author:req.body.author,
     min_read:req.body.min_read,
     author_imgurl:req.body.author_imgurl,
-    date:req.body.date
+    date:req.body.date,
+    thumbnail_url:req.body.thumbnail_url,
+    view:0
   })
   
   }
@@ -67,23 +71,25 @@ app.post("/blog/compose", function(req, res){
         res.redirect("/blog");
     }
   })
-
 });
 
      
 app.get("/blog/posts/:postId", function(req, res){
  
   const requestedPostId = req.params.postId;
-
+   
   Post.findOne({_id: requestedPostId}, function(err, post){
+    post.view=post.view+1;
     res.render("post", {
       title: post.title,
       content: post.content,
       author:post.author,
       min_read:post.min_read,
       date:post.date,
-      author_imgurl:post.author_imgurl
+      author_imgurl:post.author_imgurl,
+      view:post.view
     });
+    console.log(post.view);
   });
 });
 

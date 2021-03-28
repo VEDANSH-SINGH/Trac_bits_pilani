@@ -76,7 +76,7 @@ justify-content: center;
 }
 .blog-title{
   color:white;
-
+  text-shadow: 0 0 4px red;
 }
 .container-row{
   
@@ -102,7 +102,7 @@ justify-content: space-between;
   color:white;
 display: flex;
 justify-content: center;
-  
+  flex-basis: 300px;
 }
 
 .author-credentials > h6{
@@ -113,6 +113,7 @@ display: inline-block;
   border-radius: 50%;
   height: 25px;
   width: 25px;
+  object-fit:cover
 }
 .blog-info{
   display:inline-flex;
@@ -120,8 +121,11 @@ display: inline-block;
  
 
 }
+.blog-info-text-author{
+  padding:4px;
+}
 .blog-thumbnail{
-  height: 160px;
+  min-height: 200px;
   width:250px;
   max-width:90%;
  border-radius: 10%;
