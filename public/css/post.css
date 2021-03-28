@@ -38,25 +38,29 @@
   
   display: block;
    margin: 0 auto;
-  height:auto;
-  width:70%;
+  
+  width:30%;
   border-radius: 2vw;
 border:red 3px dotted;
 }
+.post-content>p{
+  text-align: left;
+}
 .post-content{
   color:rgb(207, 204, 204);
-  margin:20vh;
+  margin:20vh 25vh 25vh 25vh ;
     position: relative;
     height: 100%;
     
     z-index: 100;
-    text-align: center;
-    
+    text-align: left;
+    font-size: 1.3rem;
 }
 .subheading{
   color:white;
   text-shadow: 0 0 4px red;
   margin:4vmin 3vmin 0.3vmin 3vmin;
+  text-align: center;
 }
 /*-----------------------------------
     1 - Header
@@ -308,3 +312,13 @@ border-left-color: #F7F9F8; }
   width: 0%; }
 100% {
   width: 80%; } } 
+@media only screen and (max-width:600px){
+  .post-content{
+    margin: 20vh 5vh 5vh 5vh;
+    font-size: 1.4rem;
+  }
+.post-image>img{
+  width:50%;
+  
+}
+}
