@@ -3,7 +3,9 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 var _ = require('lodash');
 let post=[];
-
+let featured1={};
+let featured2={};
+let featured3={};
 const mongoose = require('mongoose');
 
 
@@ -44,7 +46,9 @@ app.get('/projects', function(req, res) {
 app.get('/blog', function(req, res) {
   Post.find({}, function(err, posts){
     res.render("blog", {
-      
+      featured1:featured1,
+      featured2:featured2,
+      featured3:featured3,
       posts: posts
       });
   });
@@ -72,14 +76,24 @@ app.post("/blog/compose", function(req, res){
     }
   })
 });
-
-     
+  Post.findOne({title:"Charting The Heavens"}, function(err, x){
+    featured1=x;
+    
+  });
+     Post.findOne({title:"Journey Through Quantum Universe and the “Stringy” String Theory"}, function(err, x){
+    featured2=x;
+   
+  });Post.findOne({title:"Adding a Webb of eyes in the sky"}, function(err, x){
+    featured3=x;
+    
+  });
 app.get("/blog/posts/:postId", function(req, res){
  
   const requestedPostId = req.params.postId;
    
   Post.findOne({_id: requestedPostId}, function(err, post){
     post.view=post.view+1;
+   
     res.render("post", {
       title: post.title,
       content: post.content,
@@ -104,3 +118,4 @@ app.get("/blog/posts/:postId", function(req, res){
 app.listen(process.env.PORT || 4000, function() {
   console.log("Server started on port 4000");
 });
+

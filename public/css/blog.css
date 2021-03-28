@@ -30,8 +30,11 @@ header a {
   height:100vh;
   object-fit: cover;
 }
+.carousel-caption a{
+  color: white;
+}
 .carousel-caption{
- width: 400px;
+ width: 700px;
 left: 50% !important;
 top: 55% !important;
  transform: translate(-50%, -50%);
