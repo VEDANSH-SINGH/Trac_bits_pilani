@@ -4,6 +4,7 @@
 .team {
   margin: 4vmin;
   margin-top: 24vh;
+  margin-bottom: 10vh;
 }
 @media only screen and (min-width: 500px) {
   header > .container {
