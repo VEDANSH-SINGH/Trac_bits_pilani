@@ -1,41 +1,41 @@
 <%- include('partials/header'); -%>
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<h1>Compose</h1>
-<form class="" action="/blog/compose" method="post">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1>Compose</h1>
+  <form class="" action="/blog/compose" method="post">
 
-<div class="form-group">  
-  <label>Title</label>
+    <div class="form-group">
+      <label>Title</label>
       <input type="text" class="form-control" name="postTitle"></input>
-       <label>min_read</label>
+      <label>min_read</label>
       <input type="text" class="form-control" name="min_read"></input>
-       <label>author</label>
+      <label>author</label>
       <input type="text" class="form-control" name="author"></input>
       <label>author_imgurl</label>
       <input type="text" class="form-control" name="author_imgurl"></input>
       <label>date</label>
       <input type="text" class="form-control" name="date"></input>
-       <label>thumbnail_url</label>
+      <label>thumbnail_url</label>
       <input type="text" class="form-control" name="thumbnail_url"></input>
-  <label>Post</label>
-  <textarea rows=5 cols=30 name="postBody" class="form-control"></textarea>
-  <label>Password</label>
-    <input type="text" class="form-control" name="password"></input>
-    </div>   
+      <label>Post</label>
+      <textarea rows=5 cols=30 name="postBody" class="form-control"></textarea>
+      <label>Password</label>
+      <input type="text" class="form-control" name="password"></input>
+    </div>
 
-      <button type="submit" name="button" class="btn btn-primary">Publish</button>
-  
-</form>
-</div>
-</section>
-<%- include('partials/footer'); -%>
-<style>
-  body{
-    background-color: rgb(2, 2, 2);
-  }
-</style>
+    <button type="submit" name="button" class="btn btn-primary">Publish</button>
+
+  </form>
+  </div>
+  </section>
+  <%- include('partials/footer'); -%>
+    <style>
+      body {
+        background-color: rgb(2, 2, 2);
+      }
+    </style>

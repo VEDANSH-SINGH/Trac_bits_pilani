@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRajdhani:400,600,700"
         rel="stylesheet">
     <!-- Plugins Stylesheets -->
-    <link rel="stylesheet" href="/css/loader/loaders.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="/css/font-awesome/font-awesome.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/css/aos/aos.css">
@@ -23,43 +24,47 @@
     <link rel="stylesheet" href="/css/about.css">
     <!-- Responsive Stylesheet -->
     <link rel="stylesheet" href="/css/responsive.css">
-   
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
 
 
 </head>
+<script>
+    AOS.init();
+</script>
 
 <body>
     <!-- Loader Start -->
-    
+
     <!-- Loader End -->
     <!-- Header Start -->
     <header class="position-absolute w-100">
         <div class="container">
-            
+
             <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="/"><img src="/images/logo2.png" alt="Multipurpose" height=100px" width ="100px"></a>
+                <a class="navbar-brand" href="/"><img src="/images/logo2.png" style="object-fit: contain;"
+                        alt="Multipurpose" height=100px" width="100px"></a>
                 <div class="group d-flex align-items-center">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation"><span
                             class="navbar-toggler-icon"></span></button>
-                    
-                   
+
+
                 </div>
                 <a class="search-icon d-none d-md-block" href="#"><i class="fa fa-search"></i></a>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li> 
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="/about">Team</a></li>
                         <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
                         <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
-                       
-                        
-                        
-                        
+
+
+
+
                     </ul>
                     <form class="bg-white search-form" method="get" id="searchform">
                         <div class="input-group">
@@ -74,424 +79,433 @@
             </nav>
         </div>
     </header>
-   
-      
-         
-      
-<section class="team">
-    <div class="page-title">
-        <h1>Our Team</h1>
-        
-    </div>
-    
-    <div class="grid-wrapper">
-        <h3>Executive Committee</h3>
-        
-        <div class="team-grid">
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="https://cdn.pixabay.com/photo/2015/11/04/20/59/milky-way-1023340__480.jpg">
-               </img>
-            </div>   
-            <div class="text">
-                <h3>Chaitanya Kulkarni</h3>
-                <h5>Coordinator</h5>
-            
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div></div>
-            
-        </div>
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="images\nikita.jpeg">
-               </img>
-            </div>   
-            <div class="text">
-                <h3>Nikita Saxena</h3>
-                <h5>Coordinator</h5>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="http://linkedin.com/in/nikita-saxena"><i class="fa fa-github"></i></a></li>
-        <li><a href="http://linkedin.com/in/nikita-saxena"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="images\shayan.jpeg">
-               </img>
-            </div>   
-            <div class="text">
-                <h3>Shayan Majumdar</h3>
-                <h5>SDE Project Lead</h5>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/shayan-majumder-79146519a"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="/images/siddharth.jpg">
-               </img>
-            </div>   
-            <div class="text">
-                <h3>Sidharth S Nair</h3>
-                <h5>LIGO Project Lead</h5>
-               <div class="social-container">
 
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/sidharth-nair-2829a4197/"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="/images/devansh.jpg">
-               </img>
-            </div>   
-            <div class="text">
-                <h3>Devansh Tanna</h3>
-                <h5>LIGO Project Lead</h5>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/devansh-tanna-86999a197/"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="/images/kanishk.png">
-               </img>
-            </div>   
-            <div class="text">
-                <h4>Kanishk Vishwakarma</h4>
-                <h6>Outreach and Excomm. Coordinator</h6>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-    <li><a href="https://www.linkedin.com/in/kanishk-vishwakarma-880457190/"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="images\shanmugh.jpeg">
-               </img>
-            </div>   
-            <div class="text">
-                <h2>Shanmugh Balan</h2>
-                <h5>Chief Editor</h5>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/sbalan7/"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="https://cdn.pixabay.com/photo/2015/11/04/20/59/milky-way-1023340__480.jpg">
-               </img>
-            </div>   
-            <div class="text">
-                <h2>Tejas </h2>
-                <h5>SWAN Project Lead</h5>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="https://cdn.pixabay.com/photo/2015/11/04/20/59/milky-way-1023340__480.jpg">
-               </img>
-            </div>   
-            <div class="text">
-                <h2>Vedansh Singh</h2>
-                <h5>Webmaster</h5>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
+
+
+
+    <section class="team">
+        <div class="page-title">
+            <h1>Our Team</h1>
+
         </div>
 
-    </div>
-   </div>
-   <div class="grid-wrapper">
-        <h3>Core Members</h3>
-        
-        <div class="team-grid">
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="/images/sumukh.jpg">
-               </img>
-            </div>   
-            <div class="text">
-                <h4>Sumukh Phalgaonkar</h4>
-                <h6>SWAN Senior Member</h6>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="/images/somyaroop.jpg">
-               </img>
-            </div>   
-            <div class="text">
-                <h4>Soumyarup Choudhary</h4>
-                <h6>SWAN Senior Member</h6>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="/images/sahil.jpg">
-               </img>
-            </div>   
-            <div class="text">
-                <h2>Sahil Yadav</h2>
-                <h5>Senior Member</h5>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/sahil-yadav-8418aba9/"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
+        <div class="grid-wrapper">
+            <h3>Executive Committee</h3>
 
-    </div>
-   </div>
-    <div class="grid-wrapper">
-        <h3>Junior Members</h3>
-        
-        <div class="team-grid">
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="/images/aritra.jpeg">
-               </img>
-            </div>   
-            <div class="text">
-                <h4>Aritra Biswas</h4>
-                <h6>GNU || SWAN</h6>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/aritra-biswas-6020161bb"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="/images/arjav.jpeg" style="object-fit:fill">
-               </img>
-            </div>   
-            <div class="text">
-                <h4>Arjav Jain</h4>
-                <h6>LIGO || SWAN</h6>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/aritra-biswas-6020161bb"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="/images/sushant.jpg">
-               </img>
-            </div>   
-            <div class="text">
-                <h2>V Shushant</h2>
-                <h5>LIGO</h5>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/sushant-varanasi-23a33b194"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
-        <div class="profile-card">
-            <div class="profile-div">
-                <img src="/images/tanish.png">
-               </img>
-            </div>   
-            <div class="text">
-                <h2>Tanish Mittal</h2>
-                <h5>LIGO</h5>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/tanish-mittal/"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
- <div class="profile-card">
-            <div class="profile-div">
-                <img src="/images/namit.jpg">
-               </img>
-            </div>   
-            <div class="text">
-                <h4>Namit Shrivastava</h4>
-                <h5>GNU</h5>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/namit-shrivastava-baab47204"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
-         <div class="profile-card">
-            <div class="profile-div">
-                <img src="/images/abhinav.jpg">
-               </img>
-            </div>   
-            <div class="text">
-                <h4>Abhinav Choudhary</h4>
-                <h5>LIGO</h5>
-               <div class="social-container">
-    <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/abhinav-choudhary-115a841b8/"><i class="fa fa-linkedin"></i></a></li>
-        
-    </ul>
-</div>
-            </div>
-        </div>
-    </div>
-   </div>
-</section>
-<footer>
-    <div class="flex-container">
-         <div class="card">
-              <img src="/images/TELESCOPE_2.png" alt="footer_logo" >
-               <h3>Find Us On</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                             
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </li>
+            <div class="team-grid">
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="https://cdn.pixabay.com/photo/2015/11/04/20/59/milky-way-1023340__480.jpg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h3>Chaitanya Kulkarni</h3>
+                        <h5>Coordinator</h5>
+
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
                             </ul>
-         </div>
+                        </div>
+                    </div>
 
-         <div class="credentials">
-                 <div class="contact-icon">
-                                    <i class="fa fa-map-o" aria-hidden="true"></i>
-                                </div>
-                                <!-- End contact Icon -->
-                                <div class="contact-info">
-                                    <h3>The Radio Astronomy Club (TRAC)</h3>
-                                    <p>BITS PILANI,
-                                        Vidya Vihar, Pilani, Rajasthan<BR>PIN-333031
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="images\nikita.jpeg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h3>Nikita Saxena</h3>
+                        <h5>Coordinator</h5>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="http://linkedin.com/in/nikita-saxena"><i class="fa fa-github"></i></a></li>
+                                <li><a href="http://linkedin.com/in/nikita-saxena"><i class="fa fa-linkedin"></i></a>
+                                </li>
 
-                                    </p>
-                                </div>
-         </div>
-         <div class="resources">
-              <div class="section-heading">
-                                    <h3>Resources</h3>
-                                    <span class="animate-border border-black"></span>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <a href="#">Github</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Google Drive</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Project References</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                </ul>
-         </div>    
-         </div>
-    </div>
-</footer>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="images\shayan.jpeg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h3>Shayan Majumdar</h3>
+                        <h5>SDE Project Lead</h5>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/shayan-majumder-79146519a"><i
+                                            class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="/images/siddharth.jpg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h3>Sidharth S Nair</h3>
+                        <h5>LIGO Project Lead</h5>
+                        <div class="social-container">
+
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/sidharth-nair-2829a4197/"><i
+                                            class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="/images/devansh.jpg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h3>Devansh Tanna</h3>
+                        <h5>LIGO Project Lead</h5>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/devansh-tanna-86999a197/"><i
+                                            class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="/images/kanishk.png">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h4>Kanishk Vishwakarma</h4>
+                        <h6>Outreach and Excomm. Coordinator</h6>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/kanishk-vishwakarma-880457190/"><i
+                                            class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="images\shanmugh.jpeg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h2>Shanmugha Balan</h2>
+                        <h5>Chief Editor</h5>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/sbalan7/"><i class="fa fa-linkedin"></i></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="https://cdn.pixabay.com/photo/2015/11/04/20/59/milky-way-1023340__480.jpg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h2>Tejas </h2>
+                        <h5>SWAN Project Lead</h5>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="https://cdn.pixabay.com/photo/2015/11/04/20/59/milky-way-1023340__480.jpg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h2>Vedansh Singh</h2>
+                        <h5>Webmaster</h5>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="grid-wrapper">
+            <h3>Core Members</h3>
+
+            <div class="team-grid">
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="/images/sumukh.jpg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h4>Sumukh Phalgaonkar</h4>
+                        <h6>SWAN Senior Member</h6>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="/images/somyaroop.jpg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h4>Soumyarup Choudhary</h4>
+                        <h6>SWAN Senior Member</h6>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="/images/sahil.jpg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h2>Sahil Yadav</h2>
+                        <h5>Senior Member</h5>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/sahil-yadav-8418aba9/"><i
+                                            class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="grid-wrapper">
+            <h3>Junior Members</h3>
+
+            <div class="team-grid">
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="/images/aritra.jpeg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h4>Aritra Biswas</h4>
+                        <h6>GNU || SWAN</h6>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/aritra-biswas-6020161bb"><i
+                                            class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="/images/arjav.jpeg" style="object-fit:fill">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h4>Arjav Jain</h4>
+                        <h6>LIGO || SWAN</h6>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/aritra-biswas-6020161bb"><i
+                                            class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="/images/sushant.jpg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h2>V Shushant</h2>
+                        <h5>LIGO</h5>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/sushant-varanasi-23a33b194"><i
+                                            class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="/images/tanish.png">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h2>Tanish Mittal</h2>
+                        <h5>LIGO</h5>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/tanish-mittal/"><i
+                                            class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="/images/namit.jpg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h4>Namit Shrivastava</h4>
+                        <h5>GNU</h5>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/namit-shrivastava-baab47204"><i
+                                            class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-card">
+                    <div class="profile-div">
+                        <img src="/images/abhinav.jpg">
+                        </img>
+                    </div>
+                    <div class="text">
+                        <h4>Abhinav Choudhary</h4>
+                        <h5>LIGO</h5>
+                        <div class="social-container">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/abhinav-choudhary-115a841b8/"><i
+                                            class="fa fa-linkedin"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="flex-container">
+            <div class="card">
+                <img src="/images/TELESCOPE_2.png" alt="footer_logo">
+                <h3>Find Us On</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="credentials">
+                <div class="contact-icon">
+                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                </div>
+                <!-- End contact Icon -->
+                <div class="contact-info">
+                    <h3>The Radio Astronomy Club (TRAC)</h3>
+                    <p>BITS PILANI,
+                        Vidya Vihar, Pilani, Rajasthan<BR>PIN-333031
+
+                    </p>
+                </div>
+            </div>
+            <div class="resources">
+                <div class="section-heading">
+                    <h3>Resources</h3>
+                    <span class="animate-border border-black"></span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">Github</a>
+                    </li>
+                    <li>
+                        <a href="#">Google Drive</a>
+                    </li>
+                    <li>
+                        <a href="#">Project References</a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
     <!--jQuery-->
     <script src="/js/jquery-3.3.1.js"></script>
     <!--Plugins-->
     <script src="/js/bootstrap.bundle.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.2.4/pixi.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/PixiPlugin.min.js"></script>
-    <script src="/js/loaders.css.js"></script>
-    <script src="/js/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <script src="/js/swiper.min.js"></script>
-  
-    <script src="/js/lightgallery-all.min.js"></script>
+
+
     <!--Template Script-->
-      
+
 </body>
 
 </html>
-

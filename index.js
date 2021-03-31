@@ -92,9 +92,9 @@ app.get("/blog/posts/:postId", function(req, res){
   const requestedPostId = req.params.postId;
    
   Post.findOne({_id: requestedPostId}, function(err, post){
-    post.view=post.view+1;
+    
    
-    res.render("post", {
+ res.render("post", {
       title: post.title,
       content: post.content,
       author:post.author,
@@ -103,18 +103,9 @@ app.get("/blog/posts/:postId", function(req, res){
       author_imgurl:post.author_imgurl,
       view:post.view
     });
-    console.log(post.view);
+    
   });
 });
-
-
-
-
-
-
-
-
-
 app.listen(process.env.PORT || 4000, function() {
   console.log("Server started on port 4000");
 });

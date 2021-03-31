@@ -1,10 +1,9 @@
 .swiper-container {
- 
   position: relative;
   overflow: hidden;
   list-style: none;
   padding: 0;
-  font-size:2rem;
+  font-size: 2rem;
   /* Fix of Webkit flickering */
   z-index: 1;
 }
@@ -32,7 +31,7 @@
 .swiper-container-android .swiper-slide,
 .swiper-wrapper {
   -webkit-transform: translate3d(0px, 0, 0);
-          transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0);
 }
 
 .swiper-container-multirow > .swiper-wrapper {
@@ -43,8 +42,8 @@
   transition-timing-function: ease-out;
   margin: 0 auto;
 }
-.hero-text{
-  padding:0 20vmin 0 20vmin;
+.hero-text {
+  padding: 0 20vmin 0 20vmin;
 }
 .swiper-slide {
   flex-shrink: 0;
@@ -61,7 +60,8 @@
 }
 
 /* Auto Height */
-.swiper-container-autoheight, .swiper-container-autoheight .swiper-slide {
+.swiper-container-autoheight,
+.swiper-container-autoheight .swiper-slide {
   height: auto;
 }
 
@@ -72,10 +72,12 @@
   transition-property: transform, height, -webkit-transform;
 }
 
-.swiper-container-wp8-horizontal, .swiper-container-wp8-horizontal > .swiper-wrapper {
+.swiper-container-wp8-horizontal,
+.swiper-container-wp8-horizontal > .swiper-wrapper {
   touch-action: pan-y;
 }
 
-.swiper-container-wp8-vertical, .swiper-container-wp8-vertical > .swiper-wrapper {
+.swiper-container-wp8-vertical,
+.swiper-container-wp8-vertical > .swiper-wrapper {
   touch-action: pan-x;
 }

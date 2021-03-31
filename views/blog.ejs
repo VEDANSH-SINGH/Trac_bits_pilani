@@ -2,68 +2,69 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Document title -->
-        <title>TRAC</title>
-        <link rel="icon" href="images/logo.png" type="image/icon type">
-        <!-- Stylesheets & Fonts -->
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRajdhani:400,600,700"
-            rel="stylesheet">
-        <!-- Plugins Stylesheets -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Document title -->
+    <title>TRAC</title>
+    <link rel="icon" href="images/logo.png" type="image/icon type">
+    <!-- Stylesheets & Fonts -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRajdhani:400,600,700"
+        rel="stylesheet">
+    <!-- Plugins Stylesheets -->
     <link rel="stylesheet" href="css/font-awesome/font-awesome.css">
-        <link rel="stylesheet" href="/css/bootstrap.css">
-        <link rel="stylesheet" href="/css/aos/aos.css">
-        <link rel="stylesheet" href="/css/swiper/swiper.css">
-        <link rel="stylesheet" href="css/lightgallery.min.css">
-         
-        
-        <!-- Template Stylesheet -->
-        <link rel="stylesheet" href="/css/blog.css">
-        <!-- Responsive Stylesheet -->
-        <link rel="stylesheet" href="/css/responsive.css">
-    
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/aos/aos.css">
+    <link rel="stylesheet" href="/css/swiper/swiper.css">
+    <link rel="stylesheet" href="css/lightgallery.min.css">
+
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="/css/blog.css">
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
 
 
 </head>
 
 
-  
+
 
 <body>
-   <!-- Loader Start -->
-   
+    <!-- Loader Start -->
+
     <!-- Loader End -->
     <!-- Header Start -->
     <header class="position-absolute w-100">
         <div class="container">
-            
+
             <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="/"><img src="/images/logo2.png" alt="Multipurpose" height=100px" width ="100px"></a>
+                <a class="navbar-brand" href="/"><img src="/images/logo2.png" style="object-fit: contain;"
+                        alt="Multipurpose" height=100px" width="100px"></a>
                 <div class="group d-flex align-items-center">
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation"><span
                             class="navbar-toggler-icon"></span></button>
-                    
-                   
+
+
                 </div>
                 <a class="search-icon d-none d-md-block" href="#"><i class="fa fa-search"></i></a>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="/" >Home</a></li> 
-                        <li class="nav-item"><a class="nav-link" href="/about"  >Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/projects"  >Projects</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/blog" >Blog</a></li>
-                       
-                        
-                        
-                        
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/blog">Blog</a></li>
+
+
+
+
                     </ul>
                     <form class="bg-white search-form" method="get" id="searchform">
                         <div class="input-group">
@@ -80,213 +81,180 @@
     </header>
     <!--CAROUSEL-->
 
-<div class="bd-example featured-section">
-  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="<%-featured1.thumbnail_url%>" class="d-block w-100" alt="..." >
-        <div class="container">
-            <div class="carousel-caption">
-          <div><h1 class="carousel-title"><%-featured1.title%></h1>
-          <p>-By <%-featured1.author%><br><%-featured1.min_read%></p>
-        </div>
+    <div class="bd-example featured-section">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="<%-featured1.thumbnail_url%>" class="d-block w-100" alt="...">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <div>
+                                <a href="/blog/posts/<%=featured1._id%>">
+                                    <h1 class="carousel-title">
+                                        <%-featured1.title%>
+                                    </h1>
+                                    <p>-By <%-featured1.author%><br>
+                                            <%-featured1.min_read%>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item ">
+                    <img src="<%-featured2.thumbnail_url%>" class="d-block w-100" alt="...">
+                    <div class="container">
+                        <div class="carousel-caption  ">
+
+                            <div>
+                                <a href="/blog/posts/<%=featured2._id%>">
+                                    <h1 class="carousel-title">
+                                        <%-featured2.title%>
+                                    </h1>
+                                    <p>By <%-featured2.author%><br>
+                                            <%-featured2.min_read%>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src=<%=featured3.thumbnail_url%> class="d-block w-100" alt="..." >
+                    <div class="container">
+                        <div class="carousel-caption ">
+                            <div>
+                                <a href="/blog/posts/<%=featured3._id%>">
+                                    <h1 class="carousel-title">
+                                        <%-featured3.title%>
+                                    </h1>
+                                    <p>-By <%-featured3.author%><br>
+                                            <%-featured3.min_read%>
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-      </div>
-      <div class="carousel-item ">
-        <img src="<%-featured2.thumbnail_url%>" class="d-block w-100" alt="..." >
-            <div class="container">
-        <div class="carousel-caption  ">
-            
-          <div>
-         <a href="/blog/posts/<%=featured2._id%>"> <h1 class="carousel-title"><%-featured2.title%></h1>
-          <p>By <%-featured2.author%><br><%-featured2.min_read%></p>
-          </a></div>
-          </div></div>
-        </div>
-      
-      <div class="carousel-item">
-        <img src=<%=featured3.thumbnail_url%> class="d-block w-100" alt="..." >
-        <div class="container">
-        <div class="carousel-caption ">
-            <div>
-          <h1 class="carousel-title"><%-featured3.title%></h1>
-          <p>-By <%-featured3.author%><br><%-featured3.min_read%> </p>
-        </div>
-      </div></div>
-    </div></div>
-    
-  </div>
-</div>
+    <div class="topic-div">
+        <h1 class="topic-title">Recent Blogs</h1>
+    </div>
+    <div class="blog-container">
+        <% posts.forEach(function(post){ %>
+            <div class="container-row">
 
-<div class="topic-div">
-    <h1 class="topic-title">Recent Blogs</h1>
-</div>
-<div class="blog-container">
-
-
-
-
-
- <%  posts.forEach(function(post){ %>
-
- 
-	        <div class="container-row">
-                
-		      <div class="blog-info">
-                  <div class="author-credentials">
-                      <img class="author-img" src="<%-post.author_imgurl%>"></img>
-                  <h6 class="blog-info-text-author"><%-post.author%></h6>
-                  </div>
-                 <h2 class="blog-title"><%-post.title%></h2>
-		        <p> <%-post.content.substring(0, 70) + " ..."%>
-                <a href="/blog/posts/<%=post._id%>" class="read-more">Read More</a></p>
-                <h6 class="blog-info-text">  <i class="fa fa-eye" aria-hidden="true"></i> <%-post.view%> &nbsp <i class="fa fa-star" aria-hidden="true"></i> <%-post.min_read%></h6>
-                </div> 
-                
-               <div class=blog-image>
-                   <img class="blog-thumbnail" src="<%=post.thumbnail_url%>">
-                </img>
-                </div>
-             </div>
-	         
-     
-   <% }) %>
-
-
-</div>
-
-
-
-<footer id="dk-footer" class="dk-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-lg-4">
-                    <div class="dk-footer-box-info">
-                        <a href="index.html" class="footer-logo">
-                            <img src="/images/TELESCOPE_2.png" alt="footer_logo" class="img-fluid" height=30px width=200px>
-                        </a>
-                      
-                        <div class="footer-social-link"><br><br>
-
-                            <h3>Find Us On</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                             
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-instagram"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- End Social link -->
+                <div class="blog-info">
+                    <div class="author-credentials">
+                        <img class="author-img" src="<%-post.author_imgurl%>"></img>
+                        <h6 class="blog-info-text-author">
+                            <%-post.author%>
+                        </h6>
                     </div>
-                    <!-- End Footer info -->
-                  
+                    <h2 class="blog-title">
+                        <%-post.title%>
+                    </h2>
+                    <p>
+                        <%-post.content.substring(0, 70) + " ..." %>
+                            <a href="/blog/posts/<%=post._id%>" class="read-more">Read More</a>
+                    </p>
+                    <h6 class="blog-info-text"> <i class="fa fa-eye" aria-hidden="true"></i>
+                        <%-post.view%> &nbsp <i class="fa fa-star" aria-hidden="true"></i>
+                            <%-post.min_read%>
+                    </h6>
                 </div>
-                <!-- End Col -->
-                <div class="col-md-12 col-lg-8">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="contact-us">
-                                <div class="contact-icon">
-                                    <i class="fa fa-map-o" aria-hidden="true"></i>
-                                </div>
-                                <!-- End contact Icon -->
-                                <div class="contact-info">
-                                    <h3>TRAC</h3>
-                                    <p>BITS PILANI,
-                                        Vidya Vihar, Pilani, Rajasthan<BR>PIN-333031
-
-                                    </p>
-                                </div>
-                                <!-- End Contact Info -->
-                            </div>
-                            <!-- End Contact Us -->
-                        </div>
-                        <!-- End Col -->
-                        <div class="col-md-6">
-                            <div class="contact-us contact-us-last">
-                                     <div class="row">
-                        <div class="col-md-12 col-lg-6">
-                            <div class="footer-widget footer-left-widget">
-                                <div class="section-heading">
-                                    <h3>Resources</h3>
-                                    <span class="animate-border border-black"></span>
-                                </div>
-                                <ul>
-                                    <li>
-                                        <a href="#">Github</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Google Drive</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Project References</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"></a>
-                                    </li>
-                                </ul>
-                            
-                            <!-- End Footer Widget -->
-                            </div>
-                        <!-- End col -->
-                        
-                        </div>
-                        <!-- End Col -->
-                    </div>
-                    <!-- End Row -->
+                <div class=blog-image>
+                    <img class="blog-thumbnail" src="<%=post.thumbnail_url%>">
+                    </img>
                 </div>
-                               
-                                </div>
-                                <!-- End Contact Info -->
-                            </div>
-                            <!-- End Contact Us -->
-                        </div>
-                        <!-- End Col -->
-                    </div>
-                    <!-- End Contact Row -->
-                 
             </div>
-            
-            <!-- End Widget Row -->
+            <% }) %>
+    </div>
+    <footer>
+        <div class="flex-container">
+            <div class="card">
+                <img src="/images/TELESCOPE_2.png" alt="footer_logo">
+                <h3>Find Us On</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="credentials">
+                <div class="contact-icon">
+                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                </div>
+                <!-- End contact Icon -->
+                <div class="contact-info">
+                    <h3>The Radio Astronomy Club (TRAC)</h3>
+                    <p>BITS PILANI,
+                        Vidya Vihar, Pilani, Rajasthan<BR>PIN-333031
+
+                    </p>
+                </div>
+            </div>
+            <div class="resources">
+                <div class="section-heading">
+                    <h3>Resources</h3>
+                    <span class="animate-border border-black"></span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">Github</a>
+                    </li>
+                    <li>
+                        <a href="#">Google Drive</a>
+                    </li>
+                    <li>
+                        <a href="#">Project References</a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <!-- End Contact Container -->
-
-
-</footer>
-
+        </div>
+    </footer>
     <!--jQuery-->
     <script src="/js/jquery-3.3.1.js"></script>
     <!--Plugins-->
     <script src="/js/bootstrap.bundle.js"></script>
     <script src="/js/blog-backend.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   
+
     <script src="/js/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
 
-   
-  
+
+
     <script src="/js/lightgallery-all.min.js"></script>
     <!--Template Script-->
-      
+
 </body>
 
 </html>
