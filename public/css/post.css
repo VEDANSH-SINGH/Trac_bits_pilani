@@ -346,8 +346,4 @@ form button.btn-primary:hover {
     justify-content: center;
     float: none;
   }
-  .btn {
-    padding: 10px 25px;
-    margin: 20px;
-  }
 }
