@@ -39,12 +39,13 @@ header a {
   align-items: center;
   justify-content: center;
 }
+
 .carousel-caption > div {
   padding: 30px;
 }
 .carousel-title {
   font-size: 5vw;
-
+  text-shadow: 0px 0px 3px red;
   z-index: 3;
 
   font-family: "Courier New", Courier, monospace;
@@ -70,7 +71,7 @@ header a {
 }
 a:hover {
   text-decoration: none;
-  text-shadow: 0 0 2px red;
+  color: rgb(194, 189, 189);
 }
 .blog-title {
   color: white;

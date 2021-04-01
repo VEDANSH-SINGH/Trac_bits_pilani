@@ -369,7 +369,12 @@ body {
 
   text-align: center;
 }
-
+.btn:hover {
+  background-color: darkred;
+}
+.btn:after {
+  background-color: darkred;
+}
 .text-effect {
   border-radius: 12px;
   display: flex;

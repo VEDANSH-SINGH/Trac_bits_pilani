@@ -5,37 +5,52 @@
   <br>
   <br>
   <br>
-  <br>
-  <h1>Compose</h1>
-  <form class="" action="/blog/compose" method="post">
+  <div class="wrapper">
+    <h1>Compose</h1>
+    <form class="" action="/blog/compose" method="post">
 
-    <div class="form-group">
-      <label>Title</label>
-      <input type="text" class="form-control" name="postTitle"></input>
-      <label>min_read</label>
-      <input type="text" class="form-control" name="min_read"></input>
-      <label>author</label>
-      <input type="text" class="form-control" name="author"></input>
-      <label>author_imgurl</label>
-      <input type="text" class="form-control" name="author_imgurl"></input>
-      <label>date</label>
-      <input type="text" class="form-control" name="date"></input>
-      <label>thumbnail_url</label>
-      <input type="text" class="form-control" name="thumbnail_url"></input>
-      <label>Post</label>
-      <textarea rows=5 cols=30 name="postBody" class="form-control"></textarea>
-      <label>Password</label>
-      <input type="text" class="form-control" name="password"></input>
-    </div>
+      <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" name="postTitle"></input>
+        <label>min_read</label>
+        <input type="text" class="form-control" name="min_read"></input>
+        <label>author</label>
+        <input type="text" class="form-control" name="author"></input>
+        <label>author_imgurl</label>
+        <input type="text" class="form-control" name="author_imgurl"></input>
+        <label>date</label>
+        <input type="text" class="form-control" name="date"></input>
+        <label>thumbnail_url</label>
+        <input type="text" class="form-control" name="thumbnail_url"></input>
+        <label>Post</label>
+        <textarea rows=5 cols=30 name="postBody" class="form-control"></textarea>
+        <label>Password</label>
+        <input type="text" class="form-control" name="password"></input>
+      </div>
 
-    <button type="submit" name="button" class="btn btn-primary">Publish</button>
+      <button type="submit" name="button" class="btn btn-primary">Publish</button>
 
-  </form>
+    </form>
+  </div>
   </div>
   </section>
   <%- include('partials/footer'); -%>
     <style>
       body {
+
         background-color: rgb(2, 2, 2);
+      }
+
+      .btn {
+        margin: 5vh 5vw 15vh 5vw;
+      }
+
+      .wrappper {
+        margin-bottom: 20vh;
+      }
+
+      .wrapper>h1 {
+        text-align: center;
+        color: white
       }
     </style>
