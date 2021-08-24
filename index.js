@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 mongoose.connect(
-  "mongodb+srv://vedansh_singh:Vedansh2301@cluster0.zeho1.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "",
   { useNewUrlParser: true }
 );
 
